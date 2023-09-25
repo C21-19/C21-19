@@ -25,18 +25,24 @@
 			margin: 20px;
 			padding: 15px;
 			border: 1px solid black;
+			margin-top: 260px;
+			height: 370px;
 		}		/*задання параметрів формі*/ 
-   		.center{
-			text-align: center;
-		}		/*розміщення об'єкта по центру*/
 		td{
 			border: 1px solid black;
 			padding: 10px;
-			width: 60px;
+			width: 100px;
 		}		/*задання параметрів для комірок в таблиці*/
+   		.centertxt{
+			text-align: center;
+		}		/*розміщення об'єкта по центру*/
+		.img{
+			margin-left: 550px;
+		}
 	</style>
 </head>
 <body bgcolor="CCCCCC">		<!--колір фону світлосірий-->
+<img src="https://data.gov.ua/uploads/group/2019-08-16-112306.827520LOGO-CIP-cross.png" width="240" height="240" class="img">
 <img src="https://kpi.ua/images/iszzi.png">		<!--вставка зображення-->
 	<form action="/submit" method="post" target="_blank" onsubmit="return validatePassword()">
 		<label for="name"><div>Ім'я:</div></label>
@@ -57,10 +63,10 @@
 
 		<input type="submit" value="Зареєструватись" style="width:170px;height:30px">
 	</form>		<!--форма для реєстрації-->
-<table cellspacing="0">		<!--простір між комірками таблиці = 0-->
+<table cellspacing="0" bgcolor="grey">		<!--простір між комірками таблиці = 0-->
 	<tbody>
 		<tr>
-			<td><font color="CCCCCC">..........................</font></td>
+			<td><font color="CCCCCC"></font></td>
 			<td>Понеділок</td>
 			<td>Вівторок</td>
 			<td>Середа</td>
@@ -70,38 +76,38 @@
 		</tr>
 		<tr>
 			<td>8:30-9:15 <br> 9:20-10:05</td>
-			<td><p class="center">ФВ <br> (парк)</td>
-			<td><p class="center">Іноземна мова <br> 6</td>
-			<td><p class="center">ЗВП <br> 107</td>
-			<td><p class="center">ФВ <br> (парк)</td>
-			<td><p class="center">ФВ <br> (парк)</td>
-			<td><p class="center">СР <br> 406</td>
+			<td><p class="centertxt">ФВ <br> (парк)</td>
+			<td><p class="centertxt">Іноземна мова <br> 6</td>
+			<td><p class="centertxt">ЗВП <br> 107</td>
+			<td><p class="centertxt">ФВ <br> (парк)</td>
+			<td><p class="centertxt">ФВ <br> (парк)</td>
+			<td><p class="centertxt">СР <br> 406</td>
 		</tr>
 		<tr>
 			<td>10:25-11:10 <br> 11:15-12:00</td>
-			<td><p class="center">ЗВП <br> 101</td>
-			<td><p class="center">Право <br> 314</td>
-			<td><p class="center">ЗВП <br> 107</td>
-			<td><p class="center">Право <br> 101</td>
-			<td><p class="center">ТІМ <br> 503</td>
-			<td><p class="center">СР <br> 406</td>
+			<td><p class="centertxt">ЗВП <br> 101</td>
+			<td><p class="centertxt">Право <br> 314</td>
+			<td><p class="centertxt">ЗВП <br> 107</td>
+			<td><p class="centertxt">Право <br> 101</td>
+			<td><p class="centertxt">ТІМ <br> 503</td>
+			<td><p class="centertxt">СР <br> 406</td>
 		</tr>
 		<tr>
 			<td>12:10-13:05 <br> 13:10-13:55</td>
-			<td><p class="center">ТС <br> 6</td>
-			<td><p class="center">ТІК <br> 6</td>
-			<td><p class="center">Прогр <br> 503</td>
-			<td><p class="center">ТС <br> 6</td>
-			<td><p class="center">ТІМ <br> 503</td>
-			<td><p class="center">СР <br> 406</td>
+			<td><p class="centertxt">ТС <br> 6</td>
+			<td><p class="centertxt">ТІК <br> 6</td>
+			<td><p class="centertxt">Прогр <br> 503</td>
+			<td><p class="centertxt">ТС <br> 6</td>
+			<td><p class="centertxt">ТІМ <br> 503</td>
+			<td><p class="centertxt">СР <br> 406</td>
 		</tr>
 		<tr>
 			<td>16:10-16:55 <br> 17:00-17:45</td>
-			<td><p class="center">СР <br> 101</td>
-			<td><p class="center">СР <br> 101</td>
-			<td><p class="center">СР <br> 101</td>
-			<td><p class="center">Прогр <br> 101</td>
-			<td><p class="center">СР <br> 101</td>
+			<td><p class="centertxt">СР <br> 101</td>
+			<td><p class="centertxt">СР <br> 101</td>
+			<td><p class="centertxt">СР <br> 101</td>
+			<td><p class="centertxt">Прогр <br> 101</td>
+			<td><p class="centertxt	">СР <br> 101</td>
 			<td></td>
 		</tr>
 	</tbody>
