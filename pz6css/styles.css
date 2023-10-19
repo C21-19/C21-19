@@ -1,0 +1,41 @@
+body{
+	background-color: #ECECEC;
+}
+*{
+	font-family: Arial, fantasy;
+}
+.imgcensor{
+	background-image: url('https://t4.ftcdn.net/jpg/05/15/05/67/360_F_515056731_HjbOInIAmO7idLLCTdbc0cZolWS4zPMJ.jpg');
+	background-size: cover;
+}
+.header{
+	background-image: url('https://img.freepik.com/premium-vector/gray-white-technology-background-cuttingedge-technology-and-science-line-design-can-be-used-as-a_262356-987.jpg');
+	background-size: cover;
+}
+a{
+	color: #505050;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+	color: #808080;
+}
+ul{
+	list-style-type: square;
+}
+input[type="text"], input[type="email"], button{
+	background-color: #F4F4F4;
+	border: 1px solid: #CCCCCC;
+	padding: 8px;
+}
+
+table{
+	background-color: #F4F4F4;
+	border-collapse: collapse;
+	width: 100%;
+}
+th, td{
+	border: 1px solid #DDDDDD;
+	padding: 8px;
+	text-align: left;
+}

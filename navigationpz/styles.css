@@ -1,0 +1,86 @@
+body{
+	background-color: #D7D7D7;
+	font-family: DejaVu Sans Mono, monospace;
+}
+
+.horisontal{
+	border: solid;
+	border-radius: 10px;
+	background-color: #272727;
+	text-align: center;
+	padding: 5px;
+}
+
+.horisontal li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+.horisontal a{
+	text-decoration: none;
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: solid;
+	border-radius: 10px;
+	color: #4B4B4B;
+	background-color: #A8A8A8;
+}
+
+.horisontal a:hover{
+	color: #000000;
+	background-color: #4A4A4A;
+}
+
+.horisontal img{
+	height: 20px;
+	width: 20px;
+	margin-bottom: -4px;
+}
+
+
+
+.vertical{
+	width: 150px;
+	height: 250px;
+	background-color: #272727;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: solid;
+	border-radius: 10px;
+	position: fixed;
+}
+
+.vertical li{
+	list-style-type: none;
+	text-align: center;
+	margin-bottom: 30px;
+	display: block;
+}
+
+.vertical a{
+	text-decoration: none;
+	margin-left: -40px;
+	padding: 10px;
+	border: solid;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 10px;
+	color: #4B4B4B;
+	background-color: #A8A8A8;
+}
+
+.vertical a:hover{
+	color: #000000;
+	background-color: #4A4A4A;
+}
+
+.divspace{
+	text-align: center;
+	margin-bottom: 150px;
+}
+
+.divspace1{
+	margin-top: 800px;
+}

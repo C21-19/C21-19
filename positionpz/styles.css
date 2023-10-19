@@ -1,0 +1,43 @@
+.container {
+	width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+}
+.box{
+	width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+}
+.box.static{
+	background-color: #ffcc00;
+}
+.box.relative{
+	background-color: #ff9900;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+    z-index: 2;
+}
+.box.absolute{
+	background-color: #ff6600;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+.box.fixed{
+	background-color: #ff3300;
+    position: fixed;
+    top: 500px;
+    left: 600px;
+}
+div{
+	height: 100px;
+}
