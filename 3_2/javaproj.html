@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>java</title>
+</head>
+<body>
+	<div id="myDiv"></div>
+        <p>Це текст у <strong>параграфі</strong></p>
+        <ul>
+            <li><a href="#">Пункт 1</a></li>
+            <li><a href="#">Пункт 2</a></li>
+            <li><a href="#">Пункт 3</a></li>
+        </ul>
+
+        <div>
+        	<p>Це ваша сторінка.</p>
+        	<button id="link">Перейти на іншу сторінку</button>
+        </div>
+   	
+   	<script>
+        // JavaScript-код можна вставити прямо в тег <script>
+        document.getElementById("link").addEventListener('click', function () {
+            // Перехід на іншу сторінку при кліку на кнопку
+            window.location.href = "https://google.com"
+        });
+
+        // Вибір елемента за id і зміна тексту та стилів
+		var myDiv = document.getElementById("myDiv");
+		myDiv.textContent = "Це новий текст в елементі";
+		myDiv.style.backgroundColor = "lightblue";
+
+		// Вибір елементів за тегом і зміна тексту
+		var listItems = document.getElementsByTagName("li");
+		for (var i = 0; i < listItems.length; i++) {
+    		listItems[i].textContent = "Змінений пункт " + (i + 1);
+		}
+
+		// Дочірні елементи у <ul> списку
+		var ulList = myDiv.querySelector("ul");
+		var childItems = ulList.children;
+		for (var i = 0; i < childItems.length; i++) {
+    		console.log("Дочірній елемент " + (i + 1) + ": " + childItems[i].textContent);
+		}
+
+		// Батьківський елемент для пункту 1
+		var item1 = ulList.querySelector("li:first-child");
+		var parentList = item1.parentElement;
+		console.log("Батьківський елемент для Пункту 1: " + parentList.nodeName);
+
+		// Зміна властивостей батьківського елемента
+		parentList.style.border = "1px solid red";
+    </script>
+</body>
+</html>
