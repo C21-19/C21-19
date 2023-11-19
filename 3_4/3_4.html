@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>3_4</title>
+</head>
+<body>
+	<div style="border: solid; padding: 5px; margin-bottom: 5px;">
+		<p>Натисніть кнопку, щоб модифікувати масив:</p>
+		<button onclick="modifyAndDisplayArray()">Модифікувати масив</button>
+		<p id="result"></p>
+	</div>
+
+	<script>
+		function modifyArray(arr){
+			arr.unshift("start");
+			arr.pop();
+			if(arr.length >= 2) {
+				arr[1] = "modified";
+			}
+			return arr;
+		}
+
+		function modifyAndDisplayArray() {
+			let myArray = [1, 2, 3, 4, 5];
+			let modifiedArray = modifyArray(myArray);
+			document.getElementById('result').innerHTML = "Modified Array: " + modifiedArray.join(", ");
+		}
+	</script>
+
+	<div style="border: solid; padding: 5px; margin-bottom: 5px;">
+		<p>Натисніть кнопку, щоб модифікувати масив:</p>
+		<button onclick="modifyAndDisplayArray1()">Модифікувати масив</button>
+		<p id="result1"></p>
+	</div>
+
+	<script>
+		function arrayOperations(arr){
+			arr.push("end");
+			arr.shift();
+			arr.splice(3, 0, "middle");
+			return arr;
+		}
+
+		function modifyAndDisplayArray1() {
+			let myArray1 = [6, 7, 8, 9, 10];
+			let modifiedArray1 = arrayOperations(myArray1);
+			document.getElementById('result1').innerHTML = "Modified Array: " + modifiedArray1.join(", ");
+		}
+	</script>
+
+	<div style="border: solid; padding: 5px; margin-bottom: 5px;">
+		<label for="userInput">Введіть число:</label>
+ 		<input type="text" id="userInput">
+  		<button onclick="checkInteger()">Перевірити</button>
+  		<p id="result2"></p>
+  	</div>
+
+	<script>
+		function checkInteger() {
+      var userInput = document.getElementById("userInput").value;
+      var number = parseFloat(userInput); // Перетворення введеного значення в число
+
+      if (Number.isInteger(number)) {
+        document.getElementById("result2").innerText = "Число ціле";
+      } else {
+        document.getElementById("result2").innerText = "Число не ціле";
+      }
+    }
+	</script>
+
+	<p onload="displayCurrentDate()"></p>
+
+	<script>
+    function displayCurrentDate() {
+  var currentDate = new Date();
+
+  var day = currentDate.getDate();
+  var month = currentDate.getMonth() + 1; // Місяці починаються з 0, тому додаємо 1
+  var year = currentDate.getFullYear();
+  var hours = currentDate.getHours();
+  var minutes = currentDate.getMinutes();
+
+  // Формування рядка для виводу
+  var formattedDate = `${day < 10 ? '0' : ''}${day}.${month < 10 ? '0' : ''}${month}.${year} ${hours < 10 ? '0' : ''}${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
+
+  console.log(formattedDate);
+}
+  </script>
+</body>
+</html>
