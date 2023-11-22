@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>button</title>
+</head>
+<body>
+	<button id="myButton">Press</button>
+	<div id="message"></div>
+
+	<script>
+		let myButton = document.getElementById('myButton');
+		myButton.onclick = function() {
+			var messageElement = document.getElementById('message');
+        	messageElement.innerHTML = 'Кнопка була натиснута!';
+			}
+	</script>
+</body>
+</html>

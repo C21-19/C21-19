@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>docload</title>
+</head>
+<body>
+	<h1>Текстовий вміст сторінки</h1>
+	<div id="message"></div>
+	<script>
+		window.addEventListener('load', function() {
+		var messageElement = document.getElementById('message');
+		messageElement.textContent = 'Документ повністю завантажено!';
+		});
+	</script>
+</body>
+</html>

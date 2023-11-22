@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>keypress</title>
+</head>
+<body>
+	<input id="keyPress"></input>
+	<div id="message"></div>
+
+	<script>
+		let keyPress = document.getElementById('keyPress');
+		keyPress.onkeyup = function() {
+			var messageElement = document.getElementById('message');
+			messageElement.innerHTML = 'Клавіша була натиснута!';
+			}		
+	</script>
+</body>
+</html>
